@@ -1,0 +1,11 @@
+#contact{
+    background-color: var(--bg-primary-color);
+}
+.semi-title{
+    font-size: var(--semi-title-fz);
+}
+@media(max-width:768px){
+    .semi-title{
+        font-size: var(--body-fz);
+    }
+}

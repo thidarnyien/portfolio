@@ -1,0 +1,18 @@
+:root{
+    /* background */
+    --bg-primary-color: #000;
+    --bg-secondary-color: #fff;
+    --bg-thirdy-color: #2d2c2c;
+    --bg-fourth-color: #eceaea;
+    /* color */
+    --brand-color: #ffb801;
+    --primary-color: #000;
+    --secondary-color: #fff;
+    /* font-size */
+    --main-title-fz: 60px;
+    --sub-title-fz: 35px;
+    --semi-title-fz: 24px;
+    --body-fz: 18px;
+    /* line-height */
+    --line-height: 1.5em;
+}

@@ -1,0 +1,88 @@
+.banner{
+    min-height: 90vh;
+    background: url("./banner.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle{
+    font-size: var(--sub-title-fz);
+}
+@media(max-width:992px){
+    .banner{
+        height: 60vh;
+    }
+    .banner-txt{
+        min-height: 60vh;
+    }
+    .subtitle{
+        font-size: var(--semi-title-fz);
+    }
+
+}
+@media(max-width:768px){
+    .banner{
+        min-height: 30vh;
+    }
+    .banner-txt{
+        min-height: 30vh;
+    }
+}
+.title{
+    text-align: center;
+}
+
+.display-4{
+    /* font-size: var(--main-title-fz); */
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.wrapper{
+    display: inline-flex;
+    align-items: baseline;
+}
+.dynamic-txts{
+   height: 90px;
+   line-height: 90px;
+   overflow: hidden;
+}
+.dynamic-txts li {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    
+}
+.dynamic-txts li span::after{
+    content: "";
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    background: #000f0c;
+    position: absolute;
+    border-left: 4px solid orange;
+    animation: typing 1.5s steps(12) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}

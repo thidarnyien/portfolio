@@ -1,0 +1,43 @@
+.portfolio .row img:hover{
+    background-color: black;
+}
+.portfolio .row img::after{
+    content: "More Detail >>";
+}
+.image{
+    position: relative;
+}
+.image > img{
+    width: 100%;
+    object-fit: cover;
+}
+.hover-effect{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: inherit;
+    right: inherit;
+    height: 100%;
+    line-height: 100%;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1.3rem;
+    opacity: 0;
+    transition: all .3s;
+    user-select: none;
+}
+.hover-effect>*{
+    transform: translateY(15px);
+    transition: all .3s;
+}
+.hover-effect:hover{
+    opacity: 1;
+}
+.hover-effect:hover>*{
+    transform: translateY(0);
+}
